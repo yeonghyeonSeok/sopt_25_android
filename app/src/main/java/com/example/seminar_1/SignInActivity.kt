@@ -42,6 +42,8 @@ class SignInActivity : AppCompatActivity() {
         )
 
         btnSignInSignIn?.setOnClickListener {
+            val intent = Intent(this@SignInActivity, GithubActivity::class.java)
+
             val id = edtSignInId?.text.toString()
             val pw = edtSignInPw?.text.toString()
 
